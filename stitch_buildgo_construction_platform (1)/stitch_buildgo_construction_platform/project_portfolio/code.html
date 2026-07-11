@@ -1,0 +1,385 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={theme:{extend:{"colors":{"surface-container-low":"#f5f3f3","on-secondary":"#ffffff","secondary-fixed-dim":"#ffb599","secondary-fixed":"#ffdbce","on-error":"#ffffff","surface-tint":"#5f5e5e","on-primary-fixed":"#1c1b1b","on-surface-variant":"#444748","surface-dim":"#dbdad9","on-secondary-fixed-variant":"#7f2b00","surface":"#fbf9f8","primary":"#000000","primary-fixed-dim":"#c8c6c5","tertiary-fixed":"#e2e2e2","surface-container":"#efeded","on-background":"#1b1c1c","on-error-container":"#93000a","tertiary-fixed-dim":"#c6c6c7","primary-fixed":"#e5e2e1","surface-container-lowest":"#ffffff","outline":"#747878","inverse-surface":"#303031","on-secondary-container":"#5a1c00","on-surface":"#1b1c1c","on-secondary-fixed":"#370e00","surface-container-high":"#e9e8e7","inverse-on-surface":"#f2f0f0","error-container":"#ffdad6","tertiary-container":"#1a1c1c","secondary-container":"#fc6c29","surface-container-highest":"#e4e2e2","primary-container":"#1c1b1b","background":"#fbf9f8","on-tertiary-container":"#838484","on-tertiary-fixed":"#1a1c1c","outline-variant":"#c4c7c7","on-primary-fixed-variant":"#474746","on-tertiary-fixed-variant":"#454747","surface-bright":"#fbf9f8","secondary":"#a63b00","surface-variant":"#e4e2e2","on-primary-container":"#858383","on-tertiary":"#ffffff","on-primary":"#ffffff","error":"#ba1a1a","inverse-primary":"#c8c6c5","tertiary":"#000000"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-desktop":"64px","container-max":"1280px","unit":"8px","gutter":"32px","margin-mobile":"16px"},"fontFamily":{"body-md":["Inter"],"headline-md":["Montserrat"],"headline-sm":["Montserrat"],"display-lg":["Montserrat"],"headline-lg":["Montserrat"],"body-lg":["Inter"],"label-md":["Inter"],"display-lg-mobile":["Montserrat"]},"fontSize":{"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"700"}],"headline-sm":["24px",{"lineHeight":"32px","fontWeight":"600"}],"display-lg":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-lg":["48px",{"lineHeight":"56px","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","fontWeight":"600"}],"display-lg-mobile":["40px",{"lineHeight":"48px","fontWeight":"800"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-background"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-4"><img alt="BuildGo Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMM_E4cdjs5xOEbLlAcNmaX9bWfYIpR54K15A1ULXcPegCNzySjdmOeZ6l_IRM3OOncC7rcRhIwswaE65efnCuQtPK3w3zBcvFwHSFCCrf2B95nucvFG0NbhO10lZdBe2PDrdZh7A376FEeQEfyPZYL1hpGkFCaOdAkxxQBKTQL4q3yS5AjvxIok7W6nL_F4YcxILtQ0UMcytbGAtgXaOtpLW4cfgYoTIg660V-IL3Nt-PTzw8N7VI"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">BuildGo</span></div><nav class="hidden lg:flex items-center gap-gutter" data-active-classes="text-secondary font-bold"><a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" data-path="home" href="../buildgo_home/code.html">Home</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" data-path="services" href="../our_services/code.html">Services</a><a aria-current="page" class="transition-colors text-secondary font-bold" data-path="projects" href="../project_portfolio/code.html">Projects</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" data-path="about" href="../about_us/code.html">About</a></nav><div class="flex items-center gap-6"><a class="hidden md:block bg-secondary text-on-secondary px-6 py-2 rounded font-label-md text-label-md hover:bg-on-secondary-fixed-variant transition-all" data-path="quote" href="../request_a_quote/code.html">Get a Quote</a><div class="flex items-center gap-2 border-l border-outline-variant pl-6"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUwoTFwWTIydS4u2vr-JdlBbDP6u1zV46eyP5CkNXWHBRaljxShPUZVs4bT2eteNiVUkSciLJMm9KNmEeIG3nYZ5DUJ592aPoF6fK7WTemIFmh0zreyNJI6EqEIXnXEQaedAAnJxFhVCuc53tDAOzk0dj-PhLJdUvtN8S9S5-37mifR-Cve1QQjWBS5M-ZQuVKeXTll6aFdbFL2luwn765quF8YnoX72_WwtzbP8whZF_bGsDahYME"/><span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">menu</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Hero Section: Dynamic & Impactful -->
+<section class="relative overflow-hidden bg-primary py-24 lg:py-32">
+<div class="absolute inset-0 opacity-20 pointer-events-none">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 100">
+<defs>
+<pattern height="10" id="grid" patternunits="userSpaceOnUse" width="10">
+<path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.1"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid)" height="100" width="100"></rect>
+</svg>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop relative z-10">
+<div class="flex flex-col lg:flex-row items-end gap-gutter">
+<div class="lg:w-2/3">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-[0.3em] mb-4 block">Archive 1992—2024</span>
+<h1 class="font-display-lg text-display-lg-mobile lg:text-display-lg text-on-primary mb-8 leading-none">
+                        ENGINEERING <br/>
+<span class="text-secondary italic">LANDMARKS</span>
+</h1>
+</div>
+<div class="lg:w-1/3 pb-4">
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-sm">
+                        A curated showcase of infrastructure excellence, where technical precision meets architectural vision.
+                    </p>
+</div>
+</div>
+</div>
+<!-- Floating Geometric Accent -->
+<div class="absolute -bottom-12 -right-12 w-64 h-64 border border-secondary/30 rounded-full animate-pulse"></div>
+</section>
+<!-- Project Filter Section -->
+<section class="bg-surface sticky top-20 z-40 border-b border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop h-20 flex items-center justify-between overflow-x-auto no-scrollbar">
+<div class="flex items-center gap-8 min-w-max" id="project-filters">
+<button class="filter-btn active font-label-md text-label-md text-primary flex items-center gap-2 group" data-filter="all">
+<span class="w-2 h-2 bg-secondary rounded-full group-[.active]:scale-125 transition-transform"></span>
+                    ALL PROJECTS
+                </button>
+<button class="filter-btn font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2 group" data-filter="residential">
+<span class="w-2 h-2 bg-outline-variant rounded-full group-hover:bg-secondary transition-colors"></span>
+                    RESIDENTIAL
+                </button>
+<button class="filter-btn font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2 group" data-filter="commercial">
+<span class="w-2 h-2 bg-outline-variant rounded-full group-hover:bg-secondary transition-colors"></span>
+                    COMMERCIAL
+                </button>
+<button class="filter-btn font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2 group" data-filter="industrial">
+<span class="w-2 h-2 bg-outline-variant rounded-full group-hover:bg-secondary transition-colors"></span>
+                    INDUSTRIAL
+                </button>
+</div>
+<div class="hidden md:flex items-center gap-4 text-on-surface-variant">
+<span class="font-label-md text-label-md" id="project-count">Showing 12 Projects</span>
+</div>
+</div>
+</section>
+<!-- Project Masonry Grid -->
+<section class="bg-surface py-16 lg:py-24">
+<div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-8" id="projects-grid">
+<!-- Project Card 1: Industrial -->
+<div class="project-card flex flex-col group cursor-pointer" data-category="industrial">
+<div class="relative overflow-hidden mb-6 aspect-[4/5]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A massive modern industrial warehouse with high-tech glass panels and exposed steel beams, shot during golden hour with a dramatic sky. Sharp engineering lines, industrial orange accents on the entry gate. Wide-angle architectural photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1OlHkKv_xm8iWG2VYs4Md3su-FLEM5NU0Hts1fZ17_AV28uiWyFh7FGqxIHXHjYXq_G6bbYCgFpkx7CyavUtg0Y7WMTzVy4KSV6INDcKHPM1EUlntPD0qAtBMIF7dsNiBRTWhMIHP0C6an659juVDwGd7KBlqgkN_ZivO225-7H3vNn7oxpU3sKnXU3R6pWlcj7OUnvO29mVC-HayuoRB6Ig2M7Nv9mpSs00LMIu7cGKSCUFvJIAq"/>
+<div class="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/10 transition-all duration-500"></div>
+<div class="absolute bottom-6 left-6 flex gap-2 translate-y-12 group-hover:translate-y-0 transition-transform duration-500 delay-100">
+<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 tracking-widest uppercase">Industrial</span>
+<span class="bg-secondary text-on-secondary text-[10px] font-bold px-3 py-1 tracking-widest uppercase">New Build</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Apex Logistics Hub</h3>
+<span class="font-body-md text-body-md text-secondary">01</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-6">Chicago, IL • 2023</p>
+<div class="grid grid-cols-2 gap-4 border-t border-outline-variant pt-6">
+<div>
+<p class="text-[10px] text-on-surface-variant font-bold uppercase mb-1">Timeline</p>
+<p class="font-body-md text-body-md text-primary">18 Months</p>
+</div>
+<div>
+<p class="text-[10px] text-on-surface-variant font-bold uppercase mb-1">Efficiency</p>
+<p class="font-body-md text-body-md text-primary">LEED Gold</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Project Card 2: Commercial -->
+<div class="project-card flex flex-col group cursor-pointer lg:-mt-12" data-category="commercial">
+<div class="relative overflow-hidden mb-6 aspect-[4/5]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Futuristic commercial office building with a curved glass facade reflecting the city skyline. Minimalist white concrete pathways and professional landscaping. High contrast, clean shadows, architectural morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcIMMw8irNzg5pVwGkIrFie0V-dSAoTuhYKwvK46Kjo_vTCde6Ky678yVrwBp89DUYLcFDNrMqsf4X_d--k92LtJFJevWKvdEGm0cvRLM4g8K3ypFJ6v6f2mnZ2kPKd1nx_X_od4-nVo0mKGGJKwXk6Mny4-asia-svRwD5NuVJsBrA9g0liSEpXZPbwwuEZk3yZSpFO8a8iaUrKOVrMyzJo1s75juTNAbCXRnHzl5Lb7zr-KKms5w"/>
+<div class="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/10 transition-all duration-500"></div>
+<div class="absolute bottom-6 left-6 flex gap-2 translate-y-12 group-hover:translate-y-0 transition-transform duration-500 delay-100">
+<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 tracking-widest uppercase">Commercial</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">The Obsidian Plaza</h3>
+<span class="font-body-md text-body-md text-secondary">02</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-6">Seattle, WA • 2022</p>
+<div class="grid grid-cols-2 gap-4 border-t border-outline-variant pt-6">
+<div>
+<p class="text-[10px] text-on-surface-variant font-bold uppercase mb-1">Structure</p>
+<p class="font-body-md text-body-md text-primary">45 Stories</p>
+</div>
+<div>
+<p class="text-[10px] text-on-surface-variant font-bold uppercase mb-1">Metric</p>
+<p class="font-body-md text-body-md text-primary">Zero-Carbon</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Project Card 3: Residential -->
+<div class="project-card flex flex-col group cursor-pointer" data-category="residential">
+<div class="relative overflow-hidden mb-6 aspect-[4/5]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Ultra-modern luxury residential villa with an infinity pool and tiered wooden decks. Integrated natural elements, warm stone textures, and floor-to-ceiling glass. Twilight shot with warm interior lighting glowing through the architecture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqul-whNM2ehJu-JZraOK7pRPYdqGmgHQHMdHe5jfja_6V1QK1ruFrrdqevAH75AsMlVlYi5hJNCuf2O-YLvyowuKX8jZC9qpmaLB6Q_3OHg-AZ4Lf25qguVh1gA2lbnbv0Wog_FTtkCMmtGMm17XHLG92loAKdDGRKoRbscYgwtcOAC3ciKBe_sUobR6wghhsfJHUKsCLpr6QB4MfpNFylppnbdpjjzAlNquEH_FzPoAv7WI3sSZH"/>
+<div class="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/10 transition-all duration-500"></div>
+<div class="absolute bottom-6 left-6 flex gap-2 translate-y-12 group-hover:translate-y-0 transition-transform duration-500 delay-100">
+<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 tracking-widest uppercase">Residential</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Skyline Terraces</h3>
+<span class="font-body-md text-body-md text-secondary">03</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-6">Malibu, CA • 2024</p>
+<div class="grid grid-cols-2 gap-4 border-t border-outline-variant pt-6">
+<div>
+<p class="text-[10px] text-on-surface-variant font-bold uppercase mb-1">Area</p>
+<p class="font-body-md text-body-md text-primary">12,500 Sq Ft</p>
+</div>
+<div>
+<p class="text-[10px] text-on-surface-variant font-bold uppercase mb-1">Status</p>
+<p class="font-body-md text-body-md text-primary">Completed</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Project Card 4: Industrial -->
+<div class="project-card flex flex-col group cursor-pointer lg:mt-8" data-category="industrial">
+<div class="relative overflow-hidden mb-6 aspect-[4/5]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-precision aerospace manufacturing facility. Pristine white interior with robotic arms and advanced engineering equipment. Cleanroom aesthetic with bright, even clinical lighting. Professional technical photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe5oxeaCoAbsHGD19RejUZmwdX9Tzcc6MIkY5MDMWd42xxbeWCpKoQfnheq04MQZxn-BdT2_cXYgin8Jp-ESOLuAQcObFlGOChKk-MPSUPmnTA7yUIdYTUCo2xLlkle2dDLNxYn4itIQc9iWOoMjzpK7lGik2YC6HFOC6gzWMIk6gXCzQrcc7dvemdNMiY5gfcFEngoxUEB-tFgGIf38Pw33FFcA-QcPukOSPH_4leKSMd0xBMqtpR"/>
+<div class="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/10 transition-all duration-500"></div>
+<div class="absolute bottom-6 left-6 flex gap-2 translate-y-12 group-hover:translate-y-0 transition-transform duration-500 delay-100">
+<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 tracking-widest uppercase">Industrial</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Vector Nano-Plant</h3>
+<span class="font-body-md text-body-md text-secondary">04</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-6">Austin, TX • 2021</p>
+<div class="grid grid-cols-2 gap-4 border-t border-outline-variant pt-6">
+<div>
+<p class="text-[10px] text-on-surface-variant font-bold uppercase mb-1">Spec</p>
+<p class="font-body-md text-body-md text-primary">H-5 Safety</p>
+</div>
+<div>
+<p class="text-[10px] text-on-surface-variant font-bold uppercase mb-1">Innovation</p>
+<p class="font-body-md text-body-md text-primary">Smart-Grid</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Project Card 5: Commercial -->
+<div class="project-card flex flex-col group cursor-pointer" data-category="commercial">
+<div class="relative overflow-hidden mb-6 aspect-[4/5]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Elegant metropolitan boutique hotel with a dark charcoal facade and warm copper trim. Sidewalk cafe seating in front. High-end urban architecture, moody evening lighting, reflections on wet asphalt." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu78jmvz_62XtYls7GHjmrcdt7EtFPnQd3rdSdGWxQgxrAzSK7dl913RkwJWfl-4Oq5Qst88WKA8hwGAa3w-V6n0uubwwLI-cwQFSDcMJSBlH9ZviIW6EgdQly6VwrroK0U_EsIpsVW1HhVzBhdqmlQPw0LzgXtniq4iJhw_dnokEsK3g2SSds0gMXVecvNf0S0OfjUF2_Jgc0HZx1-0fExmt-eLZOKdHsZ_D2bgQ6-muB5f-Z91Om"/>
+<div class="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/10 transition-all duration-500"></div>
+<div class="absolute bottom-6 left-6 flex gap-2 translate-y-12 group-hover:translate-y-0 transition-transform duration-500 delay-100">
+<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 tracking-widest uppercase">Commercial</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">The Onyx Hotel</h3>
+<span class="font-body-md text-body-md text-secondary">05</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-6">New York, NY • 2023</p>
+<div class="grid grid-cols-2 gap-4 border-t border-outline-variant pt-6">
+<div>
+<p class="text-[10px] text-on-surface-variant font-bold uppercase mb-1">Design</p>
+<p class="font-body-md text-body-md text-primary">Heritage Mod</p>
+</div>
+<div>
+<p class="text-[10px] text-on-surface-variant font-bold uppercase mb-1">Units</p>
+<p class="font-body-md text-body-md text-primary">212 Rooms</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Project Card 6: Residential -->
+<div class="project-card flex flex-col group cursor-pointer lg:-mt-20" data-category="residential">
+<div class="relative overflow-hidden mb-6 aspect-[4/5]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Sustainable micro-apartment complex with green living walls and integrated solar shading. Communal roof gardens with people visible. Bright, airy, organic modernism style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXhqcSJ1WrmcM5BcJix1966iQknWKo3SfdOlnfa05YE-ikQVq1fe6zEvqXz5tvz7zVJBfl2jC42DWEn9GCwjnVQ3OkdxxSDwoXFTPd_gqLzlBx3eCR13eRrkM9vdEx7TmzhReE1LoHZrzQnTQj2BPJYsXrPQ2EpfOlf2h-ZxrHAKYfjYWVXMRjOfcuom2872ocnTOWd5sB-kwKH0RLoWidr3SsdzXY8mwJ5QXoT7aLkWQRJ6S2pFyI"/>
+<div class="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/10 transition-all duration-500"></div>
+<div class="absolute bottom-6 left-6 flex gap-2 translate-y-12 group-hover:translate-y-0 transition-transform duration-500 delay-100">
+<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 tracking-widest uppercase">Residential</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Grove Apartments</h3>
+<span class="font-body-md text-body-md text-secondary">06</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-6">Portland, OR • 2022</p>
+<div class="grid grid-cols-2 gap-4 border-t border-outline-variant pt-6">
+<div>
+<p class="text-[10px] text-on-surface-variant font-bold uppercase mb-1">Greenery</p>
+<p class="font-body-md text-body-md text-primary">3,000 Plants</p>
+</div>
+<div>
+<p class="text-[10px] text-on-surface-variant font-bold uppercase mb-1">Materials</p>
+<p class="font-body-md text-body-md text-primary">Mass Timber</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Load More CTA -->
+<div class="mt-24 flex flex-col items-center">
+<div class="w-px h-24 bg-gradient-to-b from-primary to-transparent mb-8"></div>
+<button class="bg-primary text-on-primary px-12 py-5 font-label-md text-label-md hover:bg-secondary transition-all flex items-center gap-4">
+                    LOAD MORE ARCHIVE
+                    <span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Global Impact Statistics Section -->
+<section class="bg-surface-container-high py-24">
+<div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="flex flex-col gap-4">
+<span class="font-display-lg text-primary leading-none count-up" data-target="150">0</span>
+<p class="font-label-md text-label-md text-on-surface-variant border-l-2 border-secondary pl-4">Projects Delivered Globally Since 1992</p>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-display-lg text-primary leading-none count-up" data-target="42">0</span>
+<p class="font-label-md text-label-md text-on-surface-variant border-l-2 border-secondary pl-4">International Engineering Awards</p>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-display-lg text-primary leading-none count-up" data-target="95">0</span>
+<span class="text-display-lg -ml-12 text-primary">%</span>
+<p class="font-label-md text-label-md text-on-surface-variant border-l-2 border-secondary pl-4">Client Retention and Referral Rate</p>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-display-lg text-primary leading-none count-up" data-target="28">0</span>
+<p class="font-label-md text-label-md text-on-surface-variant border-l-2 border-secondary pl-4">Current Active Development Sites</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Project Map Overview -->
+<section class="bg-primary py-24 relative overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<div class="lg:col-span-4 flex flex-col justify-center">
+<h2 class="font-headline-lg text-headline-lg text-on-primary mb-8 leading-tight">A Global Footprint <br/><span class="text-secondary italic">of Quality</span></h2>
+<p class="font-body-lg text-body-lg text-on-primary-container mb-12">
+                        Our engineering solutions bridge cultures and climates. From seismic-resistant structures in Japan to sustainable hubs in Europe.
+                    </p>
+<div class="space-y-6">
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="w-12 h-12 flex items-center justify-center bg-surface/10 rounded-full group-hover:bg-secondary transition-colors">
+<span class="material-symbols-outlined text-on-primary">location_on</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-primary">North America</h4>
+<p class="text-[12px] text-on-primary-container">64 Active Projects</p>
+</div>
+</div>
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="w-12 h-12 flex items-center justify-center bg-surface/10 rounded-full group-hover:bg-secondary transition-colors">
+<span class="material-symbols-outlined text-on-primary">location_on</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-primary">Europe & Middle East</h4>
+<p class="text-[12px] text-on-primary-container">32 Active Projects</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8">
+<div class="w-full h-[500px] bg-surface-container-highest rounded-lg opacity-80 filter grayscale brightness-50 contrast-125" data-location="World Map Engineering Infrastructure" style="background-image: url('https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg')"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom CTA: Start Your Project -->
+<section class="bg-secondary py-20">
+<div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex flex-col lg:flex-row items-center justify-between gap-12">
+<div>
+<h2 class="font-display-lg text-display-lg-mobile lg:text-headline-lg text-on-secondary mb-4 leading-none">READY TO BUILD <br/>YOUR LEGACY?</h2>
+<p class="font-body-lg text-body-lg text-on-secondary/80">Connect with our lead architects for a project feasibility study.</p>
+</div>
+<a class="bg-primary text-on-primary px-10 py-6 font-label-md text-label-md flex items-center gap-4 group" href="#">
+                CONSULT OUR TEAM
+                <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+</section>
+<script>
+        // Project Filtering Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projects = document.querySelectorAll('.project-card');
+            const countDisplay = document.getElementById('project-count');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update UI
+                    filterBtns.forEach(b => {
+                        b.classList.remove('active', 'text-primary');
+                        b.classList.add('text-on-surface-variant');
+                        b.querySelector('span').classList.replace('bg-secondary', 'bg-outline-variant');
+                    });
+                    btn.classList.add('active', 'text-primary');
+                    btn.classList.remove('text-on-surface-variant');
+                    btn.querySelector('span').classList.replace('bg-outline-variant', 'bg-secondary');
+
+                    const filter = btn.getAttribute('data-filter');
+                    let visibleCount = 0;
+
+                    projects.forEach(p => {
+                        if (filter === 'all' || p.getAttribute('data-category') === filter) {
+                            p.style.display = 'flex';
+                            visibleCount++;
+                        } else {
+                            p.style.display = 'none';
+                        }
+                    });
+
+                    countDisplay.innerText = `Showing ${visibleCount} Projects`;
+                });
+            });
+
+            // Count up animation
+            const countElements = document.querySelectorAll('.count-up');
+            const observerOptions = {
+                threshold: 0.5
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = parseInt(entry.target.getAttribute('data-target'));
+                        let current = 0;
+                        const increment = Math.ceil(target / 50);
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= target) {
+                                entry.target.innerText = target;
+                                clearInterval(timer);
+                            } else {
+                                entry.target.innerText = current;
+                            }
+                        }, 30);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            countElements.forEach(el => observer.observe(el));
+        });
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</div></main><footer class="w-full bg-surface-container-highest pt-20 pb-10"><div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter mb-16"><div class="col-span-1 md:col-span-1"><div class="flex items-center gap-3 mb-6"><img alt="BuildGo Brand Logo" class="h-6 w-auto grayscale brightness-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMM_E4cdjs5xOEbLlAcNmaX9bWfYIpR54K15A1ULXcPegCNzySjdmOeZ6l_IRM3OOncC7rcRhIwswaE65efnCuQtPK3w3zBcvFwHSFCCrf2B95nucvFG0NbhO10lZdBe2PDrdZh7A376FEeQEfyPZYL1hpGkFCaOdAkxxQBKTQL4q3yS5AjvxIok7W6nL_F4YcxILtQ0UMcytbGAtgXaOtpLW4cfgYoTIg660V-IL3Nt-PTzw8N7VI"/> <span class="font-headline-sm text-headline-sm">BuildGo</span></div><p class="font-body-md text-body-md text-on-surface-variant">Pioneering sustainable infrastructure and professional engineering excellence since 1992.</p></div><div><h4 class="font-label-md text-label-md uppercase tracking-wider mb-6 text-primary">Contact</h4><ul class="space-y-4 font-body-md text-body-md text-on-surface-variant"><li>1284 Industrial Way</li><li>San Francisco, CA 94103</li><li>info@buildgo.engineering</li></ul></div><div><h4 class="font-label-md text-label-md uppercase tracking-wider mb-6 text-primary">Services</h4><ul class="space-y-4 font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-secondary" href="#">Civil Engineering</a></li><li><a class="hover:text-secondary" href="#">Project Management</a></li><li><a class="hover:text-secondary" href="#">Architectural Design</a></li></ul></div><div><h4 class="font-label-md text-label-md uppercase tracking-wider mb-6 text-primary">Follow Us</h4><div class="flex gap-4"><span class="material-symbols-outlined p-2 bg-surface-container-low rounded-full cursor-pointer hover:bg-secondary hover:text-on-secondary transition-all">share</span><span class="material-symbols-outlined p-2 bg-surface-container-low rounded-full cursor-pointer hover:bg-secondary hover:text-on-secondary transition-all">link</span><span class="material-symbols-outlined p-2 bg-surface-container-low rounded-full cursor-pointer hover:bg-secondary hover:text-on-secondary transition-all">public</span></div></div></div><div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4 text-on-surface-variant font-label-md text-label-md"><span>© 2024 BuildGo Engineering Inc. All rights reserved.</span><div class="flex gap-8"><span>Privacy Policy</span><span>Terms of Service</span></div></div></footer></body></html>
