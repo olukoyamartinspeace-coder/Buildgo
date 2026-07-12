@@ -1,16 +1,9 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false,
   "rewrites": [
     { "source": "/", "destination": "/buildgo_home/code.html" },
     { "source": "/services", "destination": "/our_services/code.html" },
     { "source": "/projects", "destination": "/project_portfolio/code.html" },
     { "source": "/about", "destination": "/about_us/code.html" },
-    { "source": "/quote", "destination": "/request_a_quote/code.html" },
-    { "source": "/services-mobile", "destination": "/services_mobile/code.html" },
-    { "source": "/projects-mobile", "destination": "/portfolio_mobile/code.html" },
-    { "source": "/about-mobile", "destination": "/about_us_mobile/code.html" },
-    { "source": "/quote-mobile", "destination": "/request_a_quote_mobile/code.html" },
-    { "source": "/home-mobile", "destination": "/home_mobile/code.html" }
+    { "source": "/quote", "destination": "/request_a_quote/code.html" }
   ]
 }
