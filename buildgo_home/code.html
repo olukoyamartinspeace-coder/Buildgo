@@ -351,7 +351,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const p = scrollProgress;
         if (video && video.duration) {
             const totalFrames = Math.round(video.duration * 30) || 160;
-            const skipFrames = 123;
+            const skipFrames = 3;
             const adjFrames = totalFrames - skipFrames;
             const fi = skipFrames + Math.round(p * adjFrames);
             if (fi !== currentFrame) { currentFrame = fi; video.currentTime = (fi / totalFrames) * video.duration; }
@@ -398,7 +398,7 @@ document.addEventListener('DOMContentLoaded', () => {
         rafId = requestAnimationFrame(tick);
     };
     scrollProgress = getProgress();
-    if (video) video.addEventListener('loadedmetadata', () => { video.currentTime = 4.1; }, { once: true });
+    if (video) video.addEventListener('loadedmetadata', () => { video.currentTime = 0.1; }, { once: true });
     addEventListener('scroll', onScroll, { passive: true });
     addEventListener('resize', onScroll, { passive: true });
     rafId = requestAnimationFrame(tick);
