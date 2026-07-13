@@ -202,44 +202,18 @@ html.loading,html.loading body{overflow:hidden;height:100%;margin:0}</style><scr
 <span class="font-label-md text-label-md text-secondary uppercase tracking-widest block mb-4">Portfolio</span>
 <h2 class="font-headline-lg text-headline-lg text-primary">Discover Our Landmark Projects.</h2>
 </div>
-<div class="mb-12 rounded-xl overflow-hidden shadow-lg">
-<video src="portfolio-carousel.webm" autoplay muted loop playsinline style="width:100%;display:block"></video>
+<div class="overflow-hidden rounded-xl shadow-lg bg-surface" style="position:relative">
+<div id="carousel-scroll" style="overflow-x:auto;overflow-y:hidden;cursor:grab;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;white-space:nowrap;scrollbar-width:none;-ms-overflow-style:none">
+<video id="carousel-video" src="portfolio-carousel.webm" muted loop playsinline style="height:500px;width:auto;display:inline-block;pointer-events:none;user-select:none"></video>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Project 1 -->
-<div class="lg:col-span-2 lg:row-span-2 group relative overflow-hidden h-[600px] shadow-lg">
-<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="A massive modern glass and steel bridge spanning a river. Sleek industrial design, architectural lighting at night. Professional wide-angle shot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD0-p08RjrR6Gp0Xq94LhTy2bp4unX0G-GaV5bzJV2DhBjfUEYE8qXC92DbYuZ9qiQl9WsNlQZvq4jq0Ug4Fvd7LrHHBarW1Mt-U0KQ3zAhf9mz6MyjdcsVRBCZZCZx4FTdxcliEpx6qA5FbdXVQg2GkuWK4LgXDjkGaTIm_adex8suICzg3k9VAxg_FhKBCo6rxBVLnva2RRN4t7XqnDpn1wFnWVAtBPhDweAWrdz7dqMH1AHsB8Z"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-10 flex flex-col justify-end">
-<span class="text-secondary font-label-md mb-2">Infrastructure</span>
-<h3 class="text-on-primary font-headline-md mb-4">The Meridian Bridge</h3>
-<div class="flex gap-8 text-on-primary/70 font-label-md">
-<span>SQ FT: 450K</span>
-<span>LOCATION: SAN FRANCISCO</span>
+<div style="position:absolute;top:50%;left:16px;transform:translateY(-50%);z-index:2;display:flex;gap:8px">
+<button class="carousel-btn" data-dir="-1" style="width:44px;height:44px;border-radius:50%;border:none;background:rgba(255,255,255,0.9);cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,0.15)">&#x2039;</button>
+<button class="carousel-btn" data-dir="1" style="width:44px;height:44px;border-radius:50%;border:none;background:rgba(255,255,255,0.9);cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,0.15)">&#x203a;</button>
 </div>
 </div>
-</div>
-<!-- Project 2 -->
-<div class="group relative overflow-hidden h-[288px] shadow-lg">
-<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Exterior of a brutalist-style concrete museum. Sharp angles, dramatic shadows, architectural masterpiece." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzqx0pM7-hvs6WWSzSP-McVhVd3Etesf4uZUGvFO6UtP2t8BInTQ8XnRuAaomsynlTxlUvstfGJaY4AjtMaKfs4-iHUj4IU4wKaKgB69LOcEicLQo8E5WGxNbS1qXGnN0PMFxKy_DpqzCE2ir3l3rrQVMVWuTZ-qTAmnm1CKYudvX5gw91GUaQYVPDwYGTF3t313MDKDcm9Q923zUtSADRt-qjM5qjmB6T4pPY6Hy7EF_uD9G6G_A3"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-end">
-<h3 class="text-on-primary font-headline-sm">Apex Cultural Center</h3>
-</div>
-</div>
-<!-- Project 3 -->
-<div class="group relative overflow-hidden h-[288px] shadow-lg">
-<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="High-tech data center facility with exposed copper pipes and industrial cooling systems. Precision engineering environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFZN21pJObOdBUZxk8baEh5W6s2pykSM4D0FT7RDtL3aq9EBZwpslQDxWU6Wg11KFSjs1AUTh176_wuq384CpqmNszX2nzSsBiE5d920S3S3ZVcq_iA-2tNXMtHhrH7CW6wwlIrMJEvAqVq9EvZaHDdK6sHmjj-cneMUn1OtdunnoYY1vWJMrkJgHFtpTtikaS76ThSDGuctHgB66oDNJJrsAkqme2fmCR7UmT2XoEF3xJXXm2fsc2"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-end">
-<h3 class="text-on-primary font-headline-sm">Quantum Data Hub</h3>
-</div>
-</div>
-<!-- Project 4 -->
-<div class="lg:col-span-2 group relative overflow-hidden h-[288px] shadow-lg">
-<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Sunlit interior of a modern sustainable office lobby with vertical gardens and natural wood elements." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIlwIUQJcMW4TBgfCgiWMnznn5cE7xtCbdeIq9qeWvhKUdjYEUN85IzTIBAGEcznhqfcQ36xCGxTO2dzOA4S95MC7qHsgUCLDjn7UxYUr13y3ef5pQlga6jeAgiJ62v3Uf7JipORDbFWeL1HxZd0P1Z1USoHu6q_lQzmhDkMiU1z6v21fGQvdZgRMDssh-JhsV22nH_EYzxKBeJuFzIDP0ErRxkG5DvPsczoUo23EV9HvVGp3VdrXH"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-8 flex flex-col justify-end">
-<h3 class="text-on-primary font-headline-md">Eco-Luxe Corporate Plaza</h3>
-</div>
-</div>
-</div>
+<script>
+(function(){var v=document.getElementById('carousel-video'),s=document.getElementById('carousel-scroll'),btns=document.querySelectorAll('.carousel-btn'),isDown=false,startX=0,scrollLeft=0;if(v&&v.duration){v.currentTime=0;v.play()}v.addEventListener('loadedmetadata',function(){v.currentTime=0;v.play()});btns.forEach(function(b){b.addEventListener('click',function(){var d=parseInt(b.getAttribute('data-dir'));s.scrollBy({left:d*300,behavior:'smooth'})})});s.addEventListener('mousedown',function(e){isDown=true;s.style.cursor='grabbing';startX=e.pageX-s.offsetLeft;scrollLeft=s.scrollLeft});s.addEventListener('mouseleave',function(){isDown=false;s.style.cursor='grab'});s.addEventListener('mouseup',function(){isDown=false;s.style.cursor='grab'});s.addEventListener('mousemove',function(e){if(!isDown)return;e.preventDefault();var x=e.pageX-s.offsetLeft;var walk=(x-startX)*1.5;s.scrollLeft=scrollLeft-walk});s.addEventListener('touchstart',function(e){isDown=true;startX=e.touches[0].pageX-s.offsetLeft;scrollLeft=s.scrollLeft});s.addEventListener('touchend',function(){isDown=false});s.addEventListener('touchmove',function(e){if(!isDown)return;var x=e.touches[0].pageX-s.offsetLeft;var walk=(x-startX)*1.5;s.scrollLeft=scrollLeft-walk})})();
+</script>
 <div class="mt-16 text-center">
 <a class="inline-flex items-center gap-4 font-headline-sm text-headline-sm text-primary hover:text-secondary transition-colors group" href="../project_portfolio/code.html">
                     View All Case Studies
