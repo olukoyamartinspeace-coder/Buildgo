@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface-container-low: #f5f3f3;
+  --color-on-secondary: #ffffff;
+  --color-secondary-fixed-dim: #ffb599;
+  --color-secondary-fixed: #ffdbce;
+  --color-on-error: #ffffff;
+  --color-surface-tint: #5f5e5e;
+  --color-on-primary-fixed: #1c1b1b;
+  --color-on-surface-variant: #444748;
+  --color-surface-dim: #dbdad9;
+  --color-on-secondary-fixed-variant: #7f2b00;
+  --color-surface: #fbf9f8;
+  --color-primary: #000000;
+  --color-primary-fixed-dim: #c8c6c5;
+  --color-tertiary-fixed: #e2e2e2;
+  --color-surface-container: #efeded;
+  --color-on-background: #1b1c1c;
+  --color-on-error-container: #93000a;
+  --color-tertiary-fixed-dim: #c6c6c7;
+  --color-primary-fixed: #e5e2e1;
+  --color-surface-container-lowest: #ffffff;
+  --color-outline: #747878;
+  --color-inverse-surface: #303031;
+  --color-on-secondary-container: #5a1c00;
+  --color-on-surface: #1b1c1c;
+  --color-on-secondary-fixed: #370e00;
+  --color-surface-container-high: #e9e8e7;
+  --color-inverse-on-surface: #f2f0f0;
+  --color-error-container: #ffdad6;
+  --color-tertiary-container: #1a1c1c;
+  --color-secondary-container: #fc6c29;
+  --color-surface-container-highest: #e4e2e2;
+  --color-primary-container: #1c1b1b;
+  --color-background: #fbf9f8;
+  --color-on-tertiary-container: #838484;
+  --color-on-tertiary-fixed: #1a1c1c;
+  --color-outline-variant: #c4c7c7;
+  --color-on-primary-fixed-variant: #474746;
+  --color-on-tertiary-fixed-variant: #454747;
+  --color-surface-bright: #fbf9f8;
+  --color-secondary: #a63b00;
+  --color-surface-variant: #e4e2e2;
+  --color-on-primary-container: #858383;
+  --color-on-tertiary: #ffffff;
+  --color-on-primary: #ffffff;
+  --color-error: #ba1a1a;
+  --color-inverse-primary: #c8c6c5;
+  --color-tertiary: #000000;
+
+  --font-body-md: Inter, sans-serif;
+  --font-headline-md: Montserrat, sans-serif;
+  --font-headline-sm: Montserrat, sans-serif;
+  --font-display-lg: Montserrat, sans-serif;
+  --font-headline-lg: Montserrat, sans-serif;
+  --font-body-lg: Inter, sans-serif;
+  --font-label-md: Inter, sans-serif;
+}
+
+@layer base {
+  *,*::before,*::after { box-sizing: border-box }
+  html { overflow-x: hidden }
+  body {
+    margin: 0; padding: 0;
+    overscroll-behavior: none;
+    font-family: var(--font-body-md);
+    color: var(--color-on-background);
+    background: var(--color-background);
+  }
+  ::-webkit-scrollbar { display: none }
+}
+
+@keyframes scrollHint {
+  0%,100% { transform: translateY(0) }
+  50% { transform: translateY(6px) }
+}
+
+@keyframes loaderBgShift {
+  0%,100% { background-position: 50% 50%,80% 20%,20% 80%,0% 0% }
+  50% { background-position: 50% 50%,60% 10%,40% 90%,0% 0% }
+}
+
+@keyframes logoReveal {
+  0% { opacity: 0; transform: scale(0.9) rotate(0deg) }
+  50% { opacity: 1; transform: scale(1.05) rotate(2deg) }
+  70% { opacity: 1; transform: scale(1) rotate(0deg) }
+  100% { opacity: 1; transform: scale(1) rotate(0deg) }
+}
+
+@keyframes logoGlowPulse {
+  0%,100% { opacity: 0 }
+  30% { opacity: 1 }
+  60% { opacity: 0.3 }
+}
+
+@keyframes lightSweep {
+  0% { transform: translateX(-100%) }
+  60% { transform: translateX(200%) }
+  100% { transform: translateX(200%) }
+}
+
+@keyframes lineGlint {
+  0% { transform: translateX(-100%) }
+  100% { transform: translateX(400%) }
+}
+
+@keyframes taglineFade {
+  0% { opacity: 0; transform: translateY(8px) }
+  100% { opacity: 0.7; transform: translateY(0) }
+}
+
+@keyframes loaderReveal {
+  0% { transform: scale(1) translateY(0); opacity: 1; filter: blur(0) }
+  100% { transform: scale(1.02) translateY(-10%); opacity: 0; filter: blur(4px) }
+}
+
+.scroll-hint {
+  animation: scrollHint 2s ease-in-out infinite;
+}
+
+.btn-primary, .btn-secondary {
+  position: relative;
+  transition: transform .5s cubic-bezier(0.16,1,0.3,1);
+}
+.btn-primary:hover { transform: translateY(-2px) }
+.btn-secondary:hover { transform: translateY(-2px) }
+
+[data-reveal] { will-change: transform, opacity }
+[data-reveal].revealed { opacity: 1 !important; transform: translateY(0) !important }
